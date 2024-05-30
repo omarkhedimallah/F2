@@ -28,5 +28,4 @@ export class MissionsService {
     return this.http.delete(`${this.baseUrl}/${id}`);
   }
 
-  // Ajoute d'autres méthodes pour mettre à jour, etc., des missions
 }

@@ -18,6 +18,9 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { MissionsService } from './service/missions.service';
 import { MissionsServiceComponent } from './missions-service/missions-service.component';
 import { FormGroup } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
+import { MatDialogModule } from '@angular/material/dialog';
+import { AxesComponent } from './axes/axes.component';
 
 
 @NgModule({
@@ -27,8 +30,8 @@ import { FormGroup } from '@angular/forms';
     AcceuilComponent,
     LoginComponent,
     NavbarComponent,
-    MissionsServiceComponent
-
+    MissionsServiceComponent,
+AxesComponent
     
   ],
   imports: [
@@ -42,8 +45,12 @@ import { FormGroup } from '@angular/forms';
     MatIconModule,
     HttpClientModule,
     MatGridListModule,
-    MatToolbarModule
-   
+    MatToolbarModule,
+    ReactiveFormsModule,
+    MatDialogModule,
+    
+    
+    FormsModule,
 
   ],
   providers: [ MissionsService ],
